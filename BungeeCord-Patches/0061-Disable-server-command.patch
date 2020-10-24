@@ -1,0 +1,66 @@
+From 123f395b74517d39fa367539121df38422dfd6e9 Mon Sep 17 00:00:00 2001
+From: Ruslan Isaev <ubijca16@gmail.com>
+Date: Thu, 1 Oct 2020 20:56:35 +0300
+Subject: [PATCH] Disable /server command
+
+
+diff --git a/module/cmd-server/src/main/java/net/md_5/bungee/module/cmd/server/CommandServer.java b/module/cmd-server/src/main/java/net/md_5/bungee/module/cmd/server/CommandServer.java
+index 698b420f..f20b0b44 100644
+--- a/module/cmd-server/src/main/java/net/md_5/bungee/module/cmd/server/CommandServer.java
++++ b/module/cmd-server/src/main/java/net/md_5/bungee/module/cmd/server/CommandServer.java
+@@ -32,52 +32,6 @@ public class CommandServer extends Command implements TabExecutor
+     @Override
+     public void execute(CommandSender sender, String[] args)
+     {
+-        Map<String, ServerInfo> servers = ProxyServer.getInstance().getServers();
+-        if ( args.length == 0 )
+-        {
+-            if ( sender instanceof ProxiedPlayer )
+-            {
+-                sender.sendMessage( ProxyServer.getInstance().getTranslation( "current_server", ( (ProxiedPlayer) sender ).getServer().getInfo().getName() ) );
+-            }
+-
+-            ComponentBuilder serverList = new ComponentBuilder().appendLegacy( ProxyServer.getInstance().getTranslation( "server_list" ) );
+-            boolean first = true;
+-            for ( ServerInfo server : servers.values() )
+-            {
+-                if ( server.canAccess( sender ) )
+-                {
+-                    TextComponent serverTextComponent = new TextComponent( first ? server.getName() : ", " + server.getName() );
+-                    int count = server.getPlayers().size();
+-                    serverTextComponent.setHoverEvent( new HoverEvent(
+-                            HoverEvent.Action.SHOW_TEXT,
+-                            new ComponentBuilder( count + ( count == 1 ? " player" : " players" ) + "\n" ).appendLegacy( ProxyServer.getInstance().getTranslation( "click_to_connect" ) ).create() )
+-                    );
+-                    serverTextComponent.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/server " + server.getName() ) );
+-                    serverList.append( serverTextComponent );
+-                    first = false;
+-                }
+-            }
+-            sender.sendMessage( serverList.create() );
+-        } else
+-        {
+-            if ( !( sender instanceof ProxiedPlayer ) )
+-            {
+-                return;
+-            }
+-            ProxiedPlayer player = (ProxiedPlayer) sender;
+-
+-            ServerInfo server = servers.get( args[0] );
+-            if ( server == null )
+-            {
+-                player.sendMessage( ProxyServer.getInstance().getTranslation( "no_server" ) );
+-            } else if ( !server.canAccess( player ) )
+-            {
+-                player.sendMessage( ProxyServer.getInstance().getTranslation( "no_server_permission" ) );
+-            } else
+-            {
+-                player.connect( server, ServerConnectEvent.Reason.COMMAND );
+-            }
+-        }
+     }
+ 
+     @Override
+-- 
+2.20.1
+

@@ -1,0 +1,36 @@
+From 0156bed87c062193fa4bf40b1d1e4e78561fbea3 Mon Sep 17 00:00:00 2001
+From: Ruslan Isaev <ubijca16@gmail.com>
+Date: Mon, 19 Oct 2020 13:10:35 +0300
+Subject: [PATCH] Change name to VanillaMC-Waterfall
+
+Change name to VanillaMC-Waterfall
+
+diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
+index a43db907..eba331c9 100644
+--- a/bootstrap/pom.xml
++++ b/bootstrap/pom.xml
+@@ -37,7 +37,7 @@
+     </dependencies>
+ 
+     <build>
+-        <finalName>Waterfall</finalName>
++        <finalName>VanillaMC-Waterfall</finalName>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
+index 2938f2f1..b6921684 100644
+--- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
++++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
+@@ -538,7 +538,7 @@ public class BungeeCord extends ProxyServer
+     @Override
+     public String getName()
+     {
+-        return "Waterfall";
++        return "VanillaMC-Waterfall";
+     }
+ 
+     @Override
+-- 
+2.20.1
+
