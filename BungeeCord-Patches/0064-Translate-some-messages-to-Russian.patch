@@ -1,0 +1,40 @@
+From d7cbfce577f4f1ba2d11a6995d9b73fabf667866 Mon Sep 17 00:00:00 2001
+From: Ruslan Isaev <ubijca16@gmail.com>
+Date: Mon, 26 Oct 2020 23:23:39 +0300
+Subject: [PATCH] Translate some messages to Russian
+
+
+diff --git a/proxy/src/main/resources/messages.properties b/proxy/src/main/resources/messages.properties
+index 2a79e62b..3efdf831 100644
+--- a/proxy/src/main/resources/messages.properties
++++ b/proxy/src/main/resources/messages.properties
+@@ -1,20 +1,20 @@
+-alert=\u00a78[\u00a74Alert\u00a78]\u00a7r 
++alert=\u00a78[\u00a74Объявление\u00a78]\u00a7r 
+ already_connected=\u00a7cYou are already connected to this server!
+ already_connected_proxy=\u00a7cYou are already connected to this proxy!
+ already_connecting=\u00a7cAlready connecting to this server!
+ command_list=\u00a7a[{0}] \u00a7e({1}): \u00a7r{2}
+ connect_kick=\u00a7cKicked whilst connecting to {0}: {1}
+ current_server=\u00a76You are currently connected to {0}.
+-fallback_kick=\u00a7cCould not connect to a default or fallback server, please try again later: {0}
+-fallback_lobby=\u00a7cCould not connect to target server, you have been moved to a fallback server.
++fallback_kick=\u00a7cНе удалось подключиться к серверу выживания, пожалуйста, попробуйте позже: {0}
++fallback_lobby=\u00a7cНе удалось подключиться к серверу выживания, вы были перемещены в лобби.
+ lost_connection=[Proxy] Lost connection to server.
+ mojang_fail=Error occurred while contacting login servers, are they down?
+ no_permission=\u00a7cYou do not have permission to execute this command!
+ no_server=\u00a7cThe specified server does not exist.
+ no_server_permission=\u00a7cYou don''t have permission to access this server.
+-outdated_client=Outdated client! Please use {0}
+-outdated_server=Outdated server! I''m still on {0}
+-proxy_full=Server is full!
++outdated_client=Старый клиент! Используйте {0}
++outdated_server=Сервер работает на версии {0}
++proxy_full=Сервер полон!
+ restart=[Proxy] Proxy restarting.
+ server_kick=[Kicked] 
+ server_list=\u00a76You may connect to the following servers at this time: 
+-- 
+2.20.1
+
