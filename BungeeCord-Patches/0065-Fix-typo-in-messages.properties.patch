@@ -1,19 +1,19 @@
-From 5b2b32cded10e2700c8aaee3e5e6872d5950704b Mon Sep 17 00:00:00 2001
+From 1d00dc4eef6684c84f4cee17e2b650ee96776f8d Mon Sep 17 00:00:00 2001
 From: Ruslan Isaev <ubijca16@gmail.com>
-Date: Wed, 28 Oct 2020 23:15:23 +0300
-Subject: [PATCH] Translate the message about server falling to Russian
+Date: Sun, 1 Nov 2020 22:54:05 +0300
+Subject: [PATCH] Fix typo in messages.properties
 
 
 diff --git a/proxy/src/main/resources/messages.properties b/proxy/src/main/resources/messages.properties
-index 3efdf831..d6082055 100644
+index d6082055..ae480aa3 100644
 --- a/proxy/src/main/resources/messages.properties
 +++ b/proxy/src/main/resources/messages.properties
 @@ -18,7 +18,7 @@ proxy_full=Сервер полон!
  restart=[Proxy] Proxy restarting.
  server_kick=[Kicked] 
  server_list=\u00a76You may connect to the following servers at this time: 
--server_went_down=\u00a7cThe server you were previously on went down, you have been connected to a fallback server
-+server_went_down=\u00a7cСервер на котором вы находились, упал. Приносим свои извинения :(
+-server_went_down=\u00a7cСервер на котором вы находились, упал. Приносим свои извинения :(
++server_went_down=\u00a7cСервер, на котором вы находились, упал. Приносим свои извинения :(
  total_players=Total players online: {0}
  name_too_long=Cannot have username longer than 16 characters
  name_invalid=Username contains invalid characters.
