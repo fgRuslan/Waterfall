@@ -1,0 +1,38 @@
+From c421ab40bd79b92de80b02c9f05b6b63f2e7591d Mon Sep 17 00:00:00 2001
+From: Ruslan Isaev <ubijca16@gmail.com>
+Date: Thu, 5 Nov 2020 22:46:52 +0300
+Subject: [PATCH] Translated some more messages
+
+
+diff --git a/proxy/src/main/resources/messages.properties b/proxy/src/main/resources/messages.properties
+index ae480aa3..0a59de06 100644
+--- a/proxy/src/main/resources/messages.properties
++++ b/proxy/src/main/resources/messages.properties
+@@ -3,19 +3,19 @@ already_connected=\u00a7cYou are already connected to this server!
+ already_connected_proxy=\u00a7cYou are already connected to this proxy!
+ already_connecting=\u00a7cAlready connecting to this server!
+ command_list=\u00a7a[{0}] \u00a7e({1}): \u00a7r{2}
+-connect_kick=\u00a7cKicked whilst connecting to {0}: {1}
++connect_kick=\u00a7cВас кикнуло при подключении к {0}: {1}
+ current_server=\u00a76You are currently connected to {0}.
+ fallback_kick=\u00a7cНе удалось подключиться к серверу выживания, пожалуйста, попробуйте позже: {0}
+ fallback_lobby=\u00a7cНе удалось подключиться к серверу выживания, вы были перемещены в лобби.
+-lost_connection=[Proxy] Lost connection to server.
++lost_connection=[Proxy] Потеряно соединение с сервером
+ mojang_fail=Error occurred while contacting login servers, are they down?
+-no_permission=\u00a7cYou do not have permission to execute this command!
+-no_server=\u00a7cThe specified server does not exist.
++no_permission=\u00a7cУ вас нет прав на выполнение данной команды!
++no_server=\u00a7cУказанного сервера не существует.
+ no_server_permission=\u00a7cYou don''t have permission to access this server.
+ outdated_client=Старый клиент! Используйте {0}
+ outdated_server=Сервер работает на версии {0}
+ proxy_full=Сервер полон!
+-restart=[Proxy] Proxy restarting.
++restart=[Proxy] Прокси перезапускается!
+ server_kick=[Kicked] 
+ server_list=\u00a76You may connect to the following servers at this time: 
+ server_went_down=\u00a7cСервер, на котором вы находились, упал. Приносим свои извинения :(
+-- 
+2.20.1
+
