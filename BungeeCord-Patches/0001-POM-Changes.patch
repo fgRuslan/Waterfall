@@ -1,4 +1,4 @@
-From e48c25e7ee779f8db1c6fc3acd3c3c733b8e13ec Mon Sep 17 00:00:00 2001
+From 569542832b963e809bfecb048bb75e408dbf1b2e Mon Sep 17 00:00:00 2001
 From: Tux <write@imaginarycode.com>
 Date: Thu, 19 May 2016 19:33:31 +0200
 Subject: [PATCH] POM Changes
@@ -7,7 +7,7 @@ Subject: [PATCH] POM Changes
 - Deploy to papermc mvn repo
 
 diff --git a/api/pom.xml b/api/pom.xml
-index cb49a443..f72ac5c0 100644
+index b0220028..6902ba31 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -4,42 +4,42 @@
@@ -67,7 +67,7 @@ index cb49a443..f72ac5c0 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 901d5ae8..22974d80 100644
+index c07793a9..c2826536 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -4,39 +4,40 @@
@@ -175,7 +175,7 @@ index 8dcde4f2..8523d99a 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 8a857dfd..099a4643 100644
+index 26f25afe..5f4f2b33 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -4,19 +4,19 @@
@@ -491,7 +491,7 @@ index 8d347068..ec465dd3 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 85ee0687..db1e0722 100644
+index e482fa86..4112b4e4 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -3,18 +3,25 @@
@@ -606,7 +606,7 @@ index 85ee0687..db1e0722 100644
 +             <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
                  <artifactId>maven-checkstyle-plugin</artifactId>
-                 <version>3.1.1</version>
+                 <version>3.1.0</version>
 @@ -147,6 +176,7 @@
                      </dependency>
                  </dependencies>

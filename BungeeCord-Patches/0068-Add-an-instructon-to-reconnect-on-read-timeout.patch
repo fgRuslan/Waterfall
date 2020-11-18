@@ -1,0 +1,22 @@
+From 941de20e269e6b6964b65fccdbbed2ac27b2c735 Mon Sep 17 00:00:00 2001
+From: Ruslan Isaev <ubijca16@gmail.com>
+Date: Wed, 18 Nov 2020 23:06:06 +0300
+Subject: [PATCH] Add an instructon to reconnect on read timeout
+
+
+diff --git a/proxy/src/main/resources/messages.properties b/proxy/src/main/resources/messages.properties
+index 0a59de06..902fc77a 100644
+--- a/proxy/src/main/resources/messages.properties
++++ b/proxy/src/main/resources/messages.properties
+@@ -18,7 +18,7 @@ proxy_full=Сервер полон!
+ restart=[Proxy] Прокси перезапускается!
+ server_kick=[Kicked] 
+ server_list=\u00a76You may connect to the following servers at this time: 
+-server_went_down=\u00a7cСервер, на котором вы находились, упал. Приносим свои извинения :(
++server_went_down=\u00a7cСервер, на котором вы находились, упал. Попробуйте переподключиться. Приносим свои извинения :(
+ total_players=Total players online: {0}
+ name_too_long=Cannot have username longer than 16 characters
+ name_invalid=Username contains invalid characters.
+-- 
+2.20.1
+
