@@ -1,4 +1,4 @@
-From 3730a55a64f0877c8173f9ba37332a1ea71526d3 Mon Sep 17 00:00:00 2001
+From 195296426d26d124dccadf343a93bba8b8cb4571 Mon Sep 17 00:00:00 2001
 From: Shane Freeder <theboyetronic@gmail.com>
 Date: Mon, 2 Nov 2020 19:02:31 +0000
 Subject: [PATCH] Preliminary 1.16.4 protocol support

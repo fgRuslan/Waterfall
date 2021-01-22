@@ -1,4 +1,4 @@
-From 3eb8149d667ecd596a069056f046c088852f362a Mon Sep 17 00:00:00 2001
+From a8f4a09023d1954c92044acc391e7bb0d80300ec Mon Sep 17 00:00:00 2001
 From: Ruslan Isaev <ubijca16@gmail.com>
 Date: Tue, 8 Dec 2020 17:27:15 +0300
 Subject: [PATCH] Bump netty to 4.1.53.Final

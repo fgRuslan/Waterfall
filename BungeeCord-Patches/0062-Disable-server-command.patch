@@ -1,4 +1,4 @@
-From 0473fbbd322ab9f9707af1db4a090bed01b3f599 Mon Sep 17 00:00:00 2001
+From e11e221ca86dbe4ae3863d4582dafbd83f33bb07 Mon Sep 17 00:00:00 2001
 From: Ruslan Isaev <ubijca16@gmail.com>
 Date: Thu, 1 Oct 2020 20:56:35 +0300
 Subject: [PATCH] Disable /server command

@@ -1,4 +1,4 @@
-From 941de20e269e6b6964b65fccdbbed2ac27b2c735 Mon Sep 17 00:00:00 2001
+From 492ee02ee9dade3868a3bca59b19c795e9fb53d4 Mon Sep 17 00:00:00 2001
 From: Ruslan Isaev <ubijca16@gmail.com>
 Date: Wed, 18 Nov 2020 23:06:06 +0300
 Subject: [PATCH] Add an instructon to reconnect on read timeout
